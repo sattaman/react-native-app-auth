@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNAppAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNAppAuth.m */; };
+		E2282FDD2429F6EC0082457B /* OIDExternalUserAgentIOSSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2282FDC2429F6EC0082457B /* OIDExternalUserAgentIOSSafariViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		19C8EE5020E3796B00C4D522 /* RNAppAuthAuthorizationFlowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNAppAuthAuthorizationFlowManager.h; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNAppAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAppAuth.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNAppAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppAuth.m; sourceTree = "<group>"; };
+		E2282FDB2429F6EC0082457B /* OIDExternalUserAgentIOSSafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OIDExternalUserAgentIOSSafariViewController.h; sourceTree = "<group>"; };
+		E2282FDC2429F6EC0082457B /* OIDExternalUserAgentIOSSafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OIDExternalUserAgentIOSSafariViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				E2282FDB2429F6EC0082457B /* OIDExternalUserAgentIOSSafariViewController.h */,
+				E2282FDC2429F6EC0082457B /* OIDExternalUserAgentIOSSafariViewController.m */,
 				B3E7B5881CC2AC0600A0062D /* RNAppAuth.h */,
 				B3E7B5891CC2AC0600A0062D /* RNAppAuth.m */,
 				19C8EE5020E3796B00C4D522 /* RNAppAuthAuthorizationFlowManager.h */,
@@ -99,6 +104,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -117,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNAppAuth.m in Sources */,
+				E2282FDD2429F6EC0082457B /* OIDExternalUserAgentIOSSafariViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

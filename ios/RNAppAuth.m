@@ -7,6 +7,7 @@
 #import <React/RCTLog.h>
 #import <React/RCTConvert.h>
 #import "RNAppAuthAuthorizationFlowManager.h"
+#import "OIDExternalUserAgentIOSSafariViewController.h"
 
 @interface RNAppAuth()<RNAppAuthAuthorizationFlowManagerDelegate> {
     id<OIDExternalUserAgentSession> _currentSession;
@@ -296,9 +297,11 @@ RCT_REMAP_METHOD(refresh,
         taskId = UIBackgroundTaskInvalid;
     }];
 
+    OIDExternalUserAgentIOSSafariViewController *externalUserAgent = [[OIDExternalUserAgentIOSSafariViewController alloc] initWithPresentingViewController:appDelegate.window.rootViewController];
+
     _currentSession = [OIDAuthState authStateByPresentingAuthorizationRequest:request
-                                   presentingViewController:appDelegate.window.rootViewController
-                                                   callback:^(OIDAuthState *_Nullable authState,
+                                   externalUserAgent:externalUserAgent                                                   
+                                                    callback:^(OIDAuthState *_Nullable authState,
                                                               NSError *_Nullable error) {
                                                        typeof(self) strongSelf = weakSelf;
                                                        strongSelf->_currentSession = nil;
